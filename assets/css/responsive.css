@@ -1,77 +1,88 @@
-/* 
-PC >= 1024px 
-Tablet >=740px & < 1024px
-Mobile < 740px
- */
+/* PC */
+@media (min-width: 64em) {
 
- /* BREAK POINT */
- /* PC */
- @media (min-width: 64em) {
-
- }
- /* Tablet and mobile */
- @media (max-width: 63.9375em) {
+}
+/* Tablet and mobile*/
+@media (max-width: 63.9375em) {
     .btn {
-        padding: 16px 16px;
-    }
-
-    .contact-submit-btn {
-        font-size: 16px;
+        padding: 15px 16px;
     }
 
     #nav .subnav a {
-        padding: 5px 12px;
+        padding: 5px 12px; 
     }
-
     .contact-form .form-control {
         padding: 15px;
         font-size: 16px;
     }
 
-    #footer .socials-list a {
-        margin: 0 8px; 
-    }
-
-    #footer .copyright a {
-        padding: 12px 0; 
-        display: inline-block;
-    }
-
     .contact-info {
         line-height: 2;
     }
-
- }
-
-/* Tablet */
-@media (min-width: 46.25em) and (max-width: 63.9375em) {
-
-}
-/* Mobile */
-@media (max-width: 46.1875em) {
-    .s-mt-8 {
-        margin-top: 8px !important;
+    .socials-list {
+        font-size: 48px;
     }
 
+    #footer .socials-list a {
+        margin: 0 8px;
+    }
+
+}
+
+/* Tablet */ 
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .contact-info {
+        line-height: 2;
+    }
+    #slider .text-content {
+        position: absolute; 
+        right: 248px;
+    }
+
+}
+
+
+
+
+/* Mobile */
+@media (max-width: 46.1875em) {
     .s-full-width,
     .s-col-full {
         width: 100% !important;
     }
+    .s-mt-8 {
+        margin-top: 8px !important;
+    }
+
 
     #header {
-        overflow: hidden; 
+        overflow: hidden;
     }
 
     #header .mobile-menu-btn {
-        display: block;
+        display: block; 
     }
+
 
     #header .search-btn {
         display: none;
     }
 
+
     #nav {
+        display: block; 
+    }
+
+    #nav > li {
         display: block;
+    }
+
+    #nav li a {
+        padding: 1px 24px; 
+    }
+
+    #nav > li:first-child {
+        display: inline-block; 
     }
 
     #nav .subnav {
@@ -80,42 +91,18 @@ Mobile < 740px
     }
 
     #nav .subnav a {
-        color: #fff;
+        color: #000;
         padding: 5px 41px;
     }
 
-    #nav > li:first-child {
-        display: inline-block;
-    }
-
-    #nav > li {
-        display: block;
-    }
-
-    #nav li a {
-        padding: 1px 24px;
-    }
-
-    #slider .text-content {
-        bottom: 22px;
-    }
-
-    #slider .text-heading {
-        font-size: 17px;
-    }
-
-    #slider .text-description {
-        font-size: 12px;
-        margin-top: 9px;
-    }
 
     #content .member-img {
-        width: 60%;
+        width: 70%;
     }
 
     .contact-form {
         margin-top: 32px;
+
     }
 
-
-
+    
